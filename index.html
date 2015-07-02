@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AppRCM</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+<body ng-app="appRCM" ng-controller="AppController as app">
+<div class="container">
+    <div class="container">
+        <div class="masthead">
+            <h3 class="text-muted">Project name</h3>
+            <nav>
+                <ul class="nav nav-justified">
+                    <li class="active"><a ng-link="home">Home</a></li>
+                    <li><a ng-link="about">About</a></li>
+                    <li><a ng-link="detail">Detail</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div ng-viewport></div>
+    </div>
+
+
+    <footer class="footer">
+        <p>&copy; Company 2014</p>
+    </footer>
+
+</div>
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-new-router/dist/router.es5.js"></script>
+
+
+<script src="scripts/app.js"></script>
+<script src="components/about/about.js"></script>
+<script src="components/detail/detail.js"></script>
+<script src="components/home/home.js"></script>
+
+</body>
+</html>
